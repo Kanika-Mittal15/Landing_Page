@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+section .imgBx{
+	position: relative;
+	width: 50%;
+	height: 100%;
+
+}
+section .imgBx h2 { 
+   position: absolute; 
+    top: 70%;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+   width: 100%; 
+   color: white;
+
+}
+section .imgBx h3 { 
+   position: absolute; 
+    top: 78%;
+    left: 0px;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+   width: 100%; 
+   color: white;
+
+}
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: 0.5px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+
+}
+h3 span { 
+   color: white; 
+   font: bold 14px/25px Helvetica, Sans-Serif; 
+   letter-spacing: 1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+
+}
+section .imgBx:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(225deg,#e91e63,#03a9f4);
+	z-index:1;
+	mix-blend-mode: screen;
+}
+section .imgBx img{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.centered{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+
+}
+section .contentBx .formBx{
+	width: 50%;
+	
+}
+section .contentBx .formBx h2{
+	color: #607d8b;
+	font-weight: 600;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	border-bottom: 4px solid #ff4584;
+	display: inline-block;
+	letter-spacing: 1px;
+
+}
+section .contentBx .formBx h4{
+	color: #607d8b;
+}
+section .contentBx .formBx .inputBx{
+	margin-bottom:20px;
+
+}
+section .contentBx .formBx .inputBx span{
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	color: #191919;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx input{
+	width: 100%;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border:2px solid #3498db;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background:transparent;
+	border-radius: 30px;
+}
+section .contentBx .formBx .inputBx input[type="submit"]{
+	background:#ff4584;
+	color: #fff;
+	outline:none;
+	border:none;
+	font-weight: 500;
+	cursor: pointer;
+}
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+	background:#f53677;
+}
+section .contentBx .formBx .remember{
+	margin-bottom: 10px;
+	color: #607d8b;
+	font-weight: 400;
+	font-size: 14px;
+}
+section .contentBx .formBx .inputBx p{
+	color: #607d8b;
+}
+section .contentBx .formBx .inputBx p a{
+	color: #ff4584;
+}
+section .contentBx .formBx h3{
+	color: #607d8b;
+	text-align: center;
+	margin:80px 0 10px;
+	font-weight: 500;
+}
+section .contentBx .formBx .sci{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+section .contentBx .formBx .sci li{
+	list-style: none;
+	width:50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#607d8b;
+	border-radius: 50%;
+	margin:0 7px;
+	cursor: pointer;
+}
+section .contentBx .formBx .sci li:hover{
+	background:#ff4584;
+}
+section .contentBx .formBx .sci li img{
+	transform:scale(0.5);
+	filter:invert(1);
+	width:50px;
+	height: 50px;
+}
+@media screen and (max-width: 768px) and (min-width: 378px){
+	section .imgBx{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+	}
+	section .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+section .contentBx .formBx{
+	width: 100%;
+	padding: 40px;
+	background:rgb(255 255 255 / 0.9);
+	margin:50px;
+}
+section .imgBx h3 {
+	visibility: hidden;
+}
+section .imgBx h2{
+	visibility: hidden;
+}
+}
+@media(max-width: 320px) {
+	section .imgBx{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 115%;
+
+	}
+	section .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+  section .contentBx .formBx{
+	width: 100%;
+	padding-top: 40px;
+
+	background:rgb(255 255 255 / 0.9);
+	margin:50px;
+}
+section .imgBx h3 {
+	visibility: hidden;
+}
+section .imgBx h2{
+	visibility: hidden;
+}
+}
+@media screen and (max-width: 376px) and (min-width: 321px){
+	section .imgBx{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 110%;
+
+	}
+	section .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+section .contentBx .formBx{
+	width: 100%;
+	padding: 20px;
+	background:rgb(255 255 255 / 0.9);
+	margin:50px;
+}
+section .imgBx h3 {
+	visibility: hidden;
+}
+section .imgBx h2{
+	visibility: hidden;
+}
+}
